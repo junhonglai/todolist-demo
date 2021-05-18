@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>React App</title>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="todo-container">
+      <div class="todo-wrap">
+        <div class="todo-header">
+          <input type="text" placeholder="请输入你的任务名称，按回车键确认" />
+        </div>
+        <h1 id="tip" style="display: none">恭喜你，没有任务！</h1>
+        <div id="container">
+          <ul class="todo-main">
+            <!-- <li>
+              <label>
+                <input type="checkbox" />
+                <span>xxxxx</span>
+              </label>
+              <button class="btn btn-danger">删除</button>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span>yyyy</span>
+              </label>
+              <button class="btn btn-danger">删除</button>
+            </li> -->
+          </ul>
+          <div class="todo-footer">
+            <label>
+              <input type="checkbox" />
+            </label>
+            <span> <span>已完成0</span> / 全部2 </span>
+            <button class="btn btn-danger">清除已完成任务</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../lib/logic.js"></script>
+  <script src="./render.js"></script>
+  <script src="../lib/myPost.js"></script>
+  <script src="../lib/add.js"></script>
+  <script src="../lib/remove.js"></script>
+  <script src="../lib/update.js"></script>
+</body>
+
+</html>
